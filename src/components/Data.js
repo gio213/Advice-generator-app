@@ -10,11 +10,6 @@ function Data() {
   const fetchData = async () => {
     const response = await axios.get(api);
     setData(response.data);
-    console.log(response.data);
-    const id = response.data.slip.id;
-    const advice = response.data.slip.advice;
-    console.log(id);
-    console.log(advice);
   };
 
   return (
